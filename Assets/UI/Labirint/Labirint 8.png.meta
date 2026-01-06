@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 0f5b12d96b238784ba7c30fb3ae5b80f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3487704339060699526
+    second: Labirint 8_0
+  - first:
+      213: -2535587813798639230
+    second: Labirint 8_1
+  - first:
+      213: -3163689658345344428
+    second: Labirint 8_2
+  - first:
+      213: 7709692387656903533
+    second: Labirint 8_3
+  - first:
+      213: 2593308689019146915
+    second: Labirint 8_4
+  - first:
+      213: 851946817374502694
+    second: Labirint 8_5
+  - first:
+      213: 4617513217069357666
+    second: Labirint 8_6
+  - first:
+      213: -8900286369950829807
+    second: Labirint 8_7
+  - first:
+      213: -395994424872672930
+    second: Labirint 8_8
+  - first:
+      213: 1122824489321548256
+    second: Labirint 8_9
+  - first:
+      213: -6914706833210159565
+    second: Labirint 8_10
+  - first:
+      213: 2625966024916363906
+    second: Labirint 8_11
+  - first:
+      213: 233488057865510158
+    second: Labirint 8_12
+  - first:
+      213: -8836861628415531506
+    second: Labirint 8_13
+  - first:
+      213: 4324335937279835636
+    second: Labirint 8_14
+  - first:
+      213: 6841344022743225459
+    second: Labirint 8_15
+  - first:
+      213: -6013749803492727740
+    second: Labirint 8_16
+  - first:
+      213: -3655454371491210079
+    second: Labirint 8_17
+  - first:
+      213: 9158829895807888845
+    second: Labirint 8_18
+  - first:
+      213: -32576129894401104
+    second: Labirint 8_19
+  - first:
+      213: 3041655531191836788
+    second: Labirint 8_20
+  - first:
+      213: 3777005136563036522
+    second: Labirint 8_21
+  - first:
+      213: 7464364464084209492
+    second: Labirint 8_22
+  - first:
+      213: -3989436793163313998
+    second: Labirint 8_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Labirint 8_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1053
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6813d432e90d66030800000000000000
+      internalID: 3487704339060699526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1001
+        width: 119
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28909b54158cfccd0800000000000000
+      internalID: -2535587813798639230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_2
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 891
+        width: 144
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452bfb684015814d0800000000000000
+      internalID: -3163689658345344428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_3
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1007
+        width: 136
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ba2ddf0645efa60800000000000000
+      internalID: 7709692387656903533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_4
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1004
+        width: 130
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a29be143884df320800000000000000
+      internalID: 2593308689019146915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_5
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1002
+        width: 247
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62fb129dd19b2db00800000000000000
+      internalID: 851946817374502694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_6
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 888
+        width: 121
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a17196ec3b41040800000000000000
+      internalID: 4617513217069357666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 662
+        width: 112
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11374d7c3b4db7480800000000000000
+      internalID: -8900286369950829807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_8
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 774
+        width: 596
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51ed6c2b25218af0800000000000000
+      internalID: -395994424872672930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_9
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 663
+        width: 142
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9ce1f8ce2159f00800000000000000
+      internalID: 1122824489321548256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_10
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 315
+        width: 623
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33eca8855c60a00a0800000000000000
+      internalID: -6914706833210159565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_11
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 779
+        width: 212
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a626bcf2e417420800000000000000
+      internalID: 2625966024916363906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_12
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 433
+        width: 364
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d9e5cc6248d3300800000000000000
+      internalID: 233488057865510158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_13
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 662
+        width: 260
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06230d2b292d5580800000000000000
+      internalID: -8836861628415531506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_14
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 613
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd3507af90230c30800000000000000
+      internalID: 4324335937279835636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 437
+        width: 239
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3741ad5442651fe50800000000000000
+      internalID: 6841344022743225459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 78
+        width: 588
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444adba7a6eda8ca0800000000000000
+      internalID: -6013749803492727740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_17
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 196
+        width: 381
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac1e96dd97354dc0800000000000000
+      internalID: -3655454371491210079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_18
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 83
+        width: 269
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd6bd1c343ba1f70800000000000000
+      internalID: 9158829895807888845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_19
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 196
+        width: 254
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbbc75be244c8ff0800000000000000
+      internalID: -32576129894401104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_20
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 79
+        width: 118
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470aac91791263a20800000000000000
+      internalID: 3041655531191836788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_21
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 0
+        width: 138
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a616aa7092e9a6430800000000000000
+      internalID: 3777005136563036522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_22
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 18
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45fc9c3aeefb69760800000000000000
+      internalID: 7464364464084209492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labirint 8_23
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 0
+        width: 16
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc80a1af5ca2a8c0800000000000000
+      internalID: -3989436793163313998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Labirint 8_0: 3487704339060699526
+      Labirint 8_1: -2535587813798639230
+      Labirint 8_10: -6914706833210159565
+      Labirint 8_11: 2625966024916363906
+      Labirint 8_12: 233488057865510158
+      Labirint 8_13: -8836861628415531506
+      Labirint 8_14: 4324335937279835636
+      Labirint 8_15: 6841344022743225459
+      Labirint 8_16: -6013749803492727740
+      Labirint 8_17: -3655454371491210079
+      Labirint 8_18: 9158829895807888845
+      Labirint 8_19: -32576129894401104
+      Labirint 8_2: -3163689658345344428
+      Labirint 8_20: 3041655531191836788
+      Labirint 8_21: 3777005136563036522
+      Labirint 8_22: 7464364464084209492
+      Labirint 8_23: -3989436793163313998
+      Labirint 8_3: 7709692387656903533
+      Labirint 8_4: 2593308689019146915
+      Labirint 8_5: 851946817374502694
+      Labirint 8_6: 4617513217069357666
+      Labirint 8_7: -8900286369950829807
+      Labirint 8_8: -395994424872672930
+      Labirint 8_9: 1122824489321548256
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
