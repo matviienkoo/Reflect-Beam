@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using MirraGames.SDK;
+using MirraGames.SDK.Common;
 
 public class StructureScript : MonoBehaviour
 {
@@ -53,19 +55,25 @@ public class StructureScript : MonoBehaviour
         SpawnLevelMode();
 
         // показываем объект автовыигрыша, только если бонус есть
-        int bonusCount = PlayerPrefs.GetInt("AutoWinCount", 0);
+        int bonusCount = MirraSDK.Data.GetInt("AutoWinCount", 0);
         objectAutoWin.SetActive(bonusCount > 0);
     }
 
     public void SpawnLevelMode()
     {
-        int level = PlayerPrefs.GetInt("SelectLevel", 1);
-        int modeIndex = PlayerPrefs.GetInt("GameMode", 0);
+        int level = MirraSDK.Data.GetInt("SelectLevel", 1);
+        int modeIndex = MirraSDK.Data.GetInt("GameMode", 0);
         GameMode currentMode = (GameMode)Mathf.Clamp(modeIndex, 0, System.Enum.GetValues(typeof(GameMode)).Length - 1);
 
         // Обновляем текст уровня
-        if (textLevel != null)
+        if (MirraSDK.Language.Current == LanguageType.English)
+        {
             textLevel.text = "LEVEL " + level;
+        }
+        else
+        {
+            textLevel.text = "УРОВЕНЬ " + level;
+        }
 
         // Очищаем предыдущий уровень
         foreach (Transform child in parentLevel)

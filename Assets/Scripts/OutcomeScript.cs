@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using MirraGames.SDK;
+using MirraGames.SDK.Common;
 
 public class OutcomeScript : MonoBehaviour
 {
@@ -50,8 +52,8 @@ public class OutcomeScript : MonoBehaviour
 	{
 		DeativePanels();
 		objectAutoWin.SetActive(false);
-		PlayerPrefs.SetInt("AutoWinCount", 0);
-        PlayerPrefs.Save();
+		MirraSDK.Data.SetInt("AutoWinCount", 0);
+        MirraSDK.Data.Save();
 
 		LaserReflect2D laser = FindObjectOfType<LaserReflect2D>();
         if (laser != null)

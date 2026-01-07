@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System;
+using MirraGames.SDK;
+using MirraGames.SDK.Common;
 
 public class BonusScript : MonoBehaviour
 {
@@ -25,7 +27,7 @@ public class BonusScript : MonoBehaviour
     }
     private void CheckBonusAvailability()
     {
-        if (!PlayerPrefs.HasKey(LastBonusKey))
+        if (!MirraSDK.Data.HasKey(LastBonusKey))
         {
             // First launch: bonus is available
             bonusAvailable = true;
@@ -33,7 +35,7 @@ public class BonusScript : MonoBehaviour
         else
         {
             // Calculate elapsed time since last claim
-            long storedTicks = long.Parse(PlayerPrefs.GetString(LastBonusKey));
+            long storedTicks = long.Parse(MirraSDK.Data.GetString(LastBonusKey));
             DateTime lastClaimUtc = new DateTime(storedTicks, DateTimeKind.Utc);
             TimeSpan elapsed = DateTime.UtcNow - lastClaimUtc;
 
@@ -46,15 +48,15 @@ public class BonusScript : MonoBehaviour
         if (!bonusAvailable) return;
 
         // Increment stored AutoWin count
-        int currentCount = PlayerPrefs.GetInt(AutoWinCountKey, 0);
+        int currentCount = MirraSDK.Data.GetInt(AutoWinCountKey, 0);
         if (currentCount < 1)
         {
-            PlayerPrefs.SetInt(AutoWinCountKey, currentCount + 1);
+            MirraSDK.Data.SetInt(AutoWinCountKey, currentCount + 1);
         }
 
         // Record the current UTC time for next 12-hour window
-        PlayerPrefs.SetString(LastBonusKey, DateTime.UtcNow.Ticks.ToString());
-        PlayerPrefs.Save();
+        MirraSDK.Data.SetString(LastBonusKey, DateTime.UtcNow.Ticks.ToString());
+        MirraSDK.Data.Save();
 
         // Mark bonus as claimed
         bonusAvailable = false;
@@ -67,10 +69,10 @@ public class BonusScript : MonoBehaviour
     }
     public TimeSpan GetTimeUntilNextBonus()
     {
-        if (!PlayerPrefs.HasKey(LastBonusKey))
+        if (!MirraSDK.Data.HasKey(LastBonusKey))
             return TimeSpan.Zero;
 
-        long storedTicks = long.Parse(PlayerPrefs.GetString(LastBonusKey));
+        long storedTicks = long.Parse(MirraSDK.Data.GetString(LastBonusKey));
         DateTime lastClaimUtc = new DateTime(storedTicks, DateTimeKind.Utc);
         TimeSpan elapsed = DateTime.UtcNow - lastClaimUtc;
 

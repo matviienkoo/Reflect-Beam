@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;            // для Image
+using UnityEngine.UI;
 using TMPro;
 using System;
+using MirraGames.SDK;
+using MirraGames.SDK.Common;
 
 public class LevelScript : MonoBehaviour
 {
@@ -41,7 +43,7 @@ public class LevelScript : MonoBehaviour
     private void Start()
     {
         // Восстанавливаем последний выбранный режим
-        int saved = PlayerPrefs.GetInt("GameMode", 0);
+        int saved = MirraSDK.Data.GetInt("GameMode", 0);
         SelectMode((GameMode)Mathf.Clamp(saved, 0, modes.Length - 1));
     }
 
@@ -64,7 +66,7 @@ public class LevelScript : MonoBehaviour
         }
 
         // Сохраняем выбор
-        PlayerPrefs.SetInt("GameMode", (int)mode);
+        MirraSDK.Data.SetInt("GameMode", (int)mode);
 
         // Обновляем подсветку пройденных уровней
         UpdateLevelUI();
@@ -77,7 +79,7 @@ public class LevelScript : MonoBehaviour
     public void SelectLevel(int level)
     {
         int clamped = Mathf.Clamp(level, 1, MaxLevels);
-        PlayerPrefs.SetInt("SelectLevel", clamped);
+        MirraSDK.Data.SetInt("SelectLevel", clamped);
         SceneManager.LoadScene("GameScene");
     }
     private void UpdateLevelUI()
@@ -92,7 +94,7 @@ public class LevelScript : MonoBehaviour
         for (int lvl = 1; lvl <= ImgLevels.Length && lvl <= MaxLevels; lvl++)
         {
             string key = $"{currentMode}_Level_{lvl}_Passed";
-            if (PlayerPrefs.GetInt(key, 0) == 1)
+            if (MirraSDK.Data.GetInt(key, 0) == 1)
                 ImgLevels[lvl-1].color = completedColor;
         }
     }

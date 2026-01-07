@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59770a7333cf24d4e8aa578cb4077e8d
+guid: 290f078cc7c7e7a478a685556954d99e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Oswald
+  - Roboto Condensed
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

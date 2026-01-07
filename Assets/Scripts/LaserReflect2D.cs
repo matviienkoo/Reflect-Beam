@@ -1,11 +1,12 @@
-﻿// LaserReflect2D.cs
-using System;
+﻿using System;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GameMode = LevelScript.GameMode;
 using UnityEngine.SceneManagement;
+using MirraGames.SDK;
+using MirraGames.SDK.Common;
 
 [RequireComponent(typeof(LineRenderer))]
 public class LaserReflect2D : MonoBehaviour
@@ -45,7 +46,7 @@ public class LaserReflect2D : MonoBehaviour
         line.numCapVertices    = 0;
         line.numCornerVertices = 0;
 
-        switch (PlayerPrefs.GetInt("SelectedLine", 1))
+        switch (MirraSDK.Data.GetInt("SelectedLine", 1))
         {
             case 1: laserColor = Color.red;    break;
             case 2: laserColor = Color.white;  break;
@@ -61,7 +62,7 @@ public class LaserReflect2D : MonoBehaviour
         );
         line.colorGradient = grad;
 
-        int saved = PlayerPrefs.GetInt("GameMode", 0);
+        int saved = MirraSDK.Data.GetInt("GameMode", 0);
         int maxIdx = Enum.GetValues(typeof(GameMode)).Length - 1;
         currentMode = (GameMode)Mathf.Clamp(saved, 0, maxIdx);
     }
@@ -243,18 +244,18 @@ public class LaserReflect2D : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
 
         // 2) Сохраняем прохождение ТОЛЬКО этого уровня для текущего режима
-        int selectedLevel = PlayerPrefs.GetInt("SelectLevel", 1);
+        int selectedLevel = MirraSDK.Data.GetInt("SelectLevel", 1);
         string levelKey  = $"{currentMode}_Level_{selectedLevel}_Passed";
-        PlayerPrefs.SetInt(levelKey, 1);
+        MirraSDK.Data.SetInt(levelKey, 1);
 
         // (Опционально) обновляем максимум, если он нужен где-то ещё
         string maxKey    = $"{currentMode}_PassedLevel";
-        int prevMax      = PlayerPrefs.GetInt(maxKey, 0);
+        int prevMax      = MirraSDK.Data.GetInt(maxKey, 0);
         if (selectedLevel > prevMax)
-            PlayerPrefs.SetInt(maxKey, selectedLevel);
+            MirraSDK.Data.SetInt(maxKey, selectedLevel);
 
         // Гарантируем запись на диск
-        PlayerPrefs.Save();
+        MirraSDK.Data.Save();
 
         // 3) Переходим дальше
         // if (selectedLevel >= 15)
@@ -264,8 +265,8 @@ public class LaserReflect2D : MonoBehaviour
         // }
         // Иначе — спавним следующий уровень в StructureScript
         int nextLevel = selectedLevel + 1;
-        PlayerPrefs.SetInt("SelectLevel", nextLevel);
-        PlayerPrefs.Save();
+        MirraSDK.Data.SetInt("SelectLevel", nextLevel);
+        MirraSDK.Data.Save();
         StructureScript.Instance.SpawnLevelMode();
     }
 

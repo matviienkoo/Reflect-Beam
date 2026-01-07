@@ -19,7 +19,7 @@ public class Block : MonoBehaviour
     [Tooltip("Множитель от размера спрайта (1.0 = точно по размеру), по оси X/Y")]
     public float neighborDistance = 1.05f;
 
-    [Tooltip("Слой, на котором лежат все блоки")]
+    [Tooltip("Слой, на котором лежат все блоки")] 
     public LayerMask blockLayer;
 
     // Дополнительный порог «покоя»

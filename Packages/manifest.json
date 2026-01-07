@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.romanlee17.mirrasdk5": "https://github.com/MirraSDK/SDK5.git",
     "com.unity.collab-proxy": "2.10.2",
     "com.unity.device-simulator.devices": "1.0.0",
     "com.unity.feature.2d": "2.0.1",

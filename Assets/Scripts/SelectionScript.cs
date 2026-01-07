@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using MirraGames.SDK;
+using MirraGames.SDK.Common;
 
 public class SelectionScript : MonoBehaviour
 {
@@ -19,18 +21,18 @@ public class SelectionScript : MonoBehaviour
 
     private void Awake()
     {
-        if (!PlayerPrefs.HasKey(MusicKey)) PlayerPrefs.SetInt(MusicKey, 1);
+        if (!MirraSDK.Data.HasKey(MusicKey)) MirraSDK.Data.SetInt(MusicKey, 1);
 
         if (IsMainScene)
         {
-            if (!PlayerPrefs.HasKey(LineKey))  PlayerPrefs.SetInt(LineKey, 1);
+            if (!MirraSDK.Data.HasKey(LineKey))  MirraSDK.Data.SetInt(LineKey, 1);
         }
     }
 
     private void Start()
     {
-        int savedMusic = PlayerPrefs.GetInt(MusicKey);
-        int savedLine  = PlayerPrefs.GetInt(LineKey);
+        int savedMusic = MirraSDK.Data.GetInt(MusicKey);
+        int savedLine  = MirraSDK.Data.GetInt(LineKey);
 
         ApplySelection(musicButtons, musicObjects, savedMusic);
 
@@ -46,16 +48,16 @@ public class SelectionScript : MonoBehaviour
     private void HandleSelection(List<Button> buttons, List<GameObject> objects, int index, string key)
     {
         int valid = Mathf.Clamp(index, 1, buttons.Count);
-        PlayerPrefs.SetInt(key, valid);
-        PlayerPrefs.Save();
+        MirraSDK.Data.SetInt(key, valid);
+        MirraSDK.Data.Save();
         ApplySelection(buttons, objects, valid);
     }
 
     private void HandleSelection(List<Button> buttons, int index, string key)
     {
         int valid = Mathf.Clamp(index, 1, buttons.Count);
-        PlayerPrefs.SetInt(key, valid);
-        PlayerPrefs.Save();
+        MirraSDK.Data.SetInt(key, valid);
+        MirraSDK.Data.Save();
         ApplySelection(buttons, valid);
     }
     private void ApplySelection(List<Button> buttons, List<GameObject> objects, int selected)

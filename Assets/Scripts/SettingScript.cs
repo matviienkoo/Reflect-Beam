@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using MirraGames.SDK;
+using MirraGames.SDK.Common;
 
 public class SettingScript : MonoBehaviour
 {
@@ -59,12 +61,12 @@ public class SettingScript : MonoBehaviour
     [Tooltip("MUSIC/SOUND PLAYERPREFS")]
     private void SyncFromPlayerPrefs()
     {
-        musicEnabled = PlayerPrefs.GetInt("intMusic", 0) == 0; // 0 значит включено
+        musicEnabled = MirraSDK.Data.GetInt("intMusic", 0) == 0; // 0 значит включено
     }
 
     private void SyncToPlayerPrefs()
     {
-        PlayerPrefs.SetInt("intMusic", musicEnabled ? 0 : 1);
+        MirraSDK.Data.SetInt("intMusic", musicEnabled ? 0 : 1);
     }
 
     [Tooltip("MUSIC/SOUND INITIALIZE")]
